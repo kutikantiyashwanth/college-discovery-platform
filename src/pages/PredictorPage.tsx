@@ -212,7 +212,7 @@ export const PredictorPage: React.FC<CompareProps> = ({ compareList, canAdd, onC
               onChange={e => setInput(p => ({ ...p, preferredState: e.target.value }))}
             >
               <option value="">Any State</option>
-              {['Maharashtra', 'Delhi', 'Karnataka', 'Tamil Nadu', 'Rajasthan', 'West Bengal', 'Gujarat', 'Uttar Pradesh'].map(s => (
+              {['Maharashtra', 'Delhi', 'Karnataka', 'Tamil Nadu', 'Rajasthan', 'West Bengal', 'Gujarat', 'Uttar Pradesh', 'Telangana'].map(s => (
                 <option key={s} value={s}>{s}</option>
               ))}
             </select>
