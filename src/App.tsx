@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { DiscussionProvider } from './context/DiscussionContext';
 import { Navbar } from './components/Navbar';
@@ -83,7 +83,7 @@ function AppInner() {
             <button className="btn btn-sm" style={{ background: 'rgba(255,255,255,.15)', color: '#fff', borderRadius: 8 }} onClick={clearCompare}>
               Clear
             </button>
-            <a href="/compare" className="btn btn-primary btn-sm">Compare Now →</a>
+            <Link to="/compare" className="btn btn-primary btn-sm">Compare Now →</Link>
           </div>
         </div>
       )}
